@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Topbar from './components/Topbar/Topbar';
+import './app.scss';
+import Album from './pages/Album/Album';
+import Collection from './pages/Collection/Collection';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='app'>
+        <Navbar />
+
+        <div className='mainContent'>
+          <Topbar />
+
+          <Routes>
+            <Route path="/" element={<div>Home</div>} />
+            <Route path="/collection" element={<Collection />} />
+            <Route path="/album" element={<Album />} />
+          </Routes>
+        </div>
+
+      </div>
+    </BrowserRouter>
   );
 }
 
