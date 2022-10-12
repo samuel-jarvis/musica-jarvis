@@ -6,6 +6,7 @@ import Topbar from './components/Topbar/Topbar';
 import './app.scss';
 import Album from './pages/Album/Album';
 import Collection from './pages/Collection/Collection';
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -16,9 +17,8 @@ function App() {
 
         <div className='mainContent'>
           <Topbar />
-
           <Routes>
-            <Route path="/" element={<div>Home</div>} />
+            <Route path="/" element={<Home />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/album" element={<Album />} />
           </Routes>

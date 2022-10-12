@@ -1,0 +1,28 @@
+@import "../../sass/variables.scss";
+
+.topbar {
+  padding: 2rem;
+
+  .search__bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search__icon {
+    margin-right: -2.5rem;
+    font-size: 1.5rem;
+  }
+
+  input {
+    border: .5px solid #3e3a3a8e;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background-color: transparent;
+    width: 100%;
+  }
+}
