@@ -1,6 +1,8 @@
 .top_home_section {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4rem;
+
 }
 
 .top_chart {
@@ -11,4 +13,10 @@
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.release__container {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 4rem;
 }
